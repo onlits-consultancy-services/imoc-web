@@ -15,6 +15,7 @@ import Enrollment from './components/enrollment/Enrollment';
 import Lead from './components/lead/Lead';
 import Learner from './components/learner/Learner';
 import Login from './components/authentication/Login';
+import NewOrganization from './components/organization/NewOrganization';
 import Organization from './components/organization/Organization';
 import Program from './components/program/Program';
 
@@ -71,6 +72,11 @@ function App() {
             element={<Login />}
           />
 
+          <Route 
+            path='/Organization/New'
+            element={<NewOrganization />}
+          />
+          
           <Route
             path='/Organization'
             element={<Organization />}
